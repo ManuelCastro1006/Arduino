@@ -1,34 +1,33 @@
+int dot = 100;
+int dash = 300;
+int space = 1000;
+int repeat = 2000;
+int ledPin = 7;
+
 void setup() {
   // put your setup code here, to run once:
-pinMode(8,OUTPUT);
+pinMode(ledPin,OUTPUT);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-
-//S
 for (int i = 0; i < 3; ++i){
-digitalWrite(8,HIGH);
-delay(250);
-digitalWrite(8,LOW);
-delay(250);
+digitalWrite(ledPin,HIGH);
+delay(dot);
+digitalWrite(ledPin,LOW);
+delay(dot);
 }
-delay(500);
-//O
+delay(space);
 for (int i = 0; i < 3; ++i){
-digitalWrite(8,HIGH);
-delay(500);
-digitalWrite(8,LOW);
-delay(500);
+digitalWrite(ledPin,HIGH);
+delay(dash);
+digitalWrite(ledPin,LOW);
+delay(dash);
 }
-delay(500);
-//S
-for (int i = 0; i < 3; ++i){
-digitalWrite(8,HIGH);
-delay(250);
-digitalWrite(8,LOW);
-delay(250);
-}
-//repeat
-delay(2000);
+delay(space);
+for (int i = 0; i < 3; ++i)
+{digitalWrite(ledPin,HIGH);
+delay(dot);
+digitalWrite(ledPin,LOW);
+delay(dot);
 }
