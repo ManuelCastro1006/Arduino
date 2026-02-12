@@ -9,25 +9,25 @@ void loop() {
 //S
 for (int i = 0; i < 3; ++i){
 digitalWrite(8,HIGH);
-delay(500);
+delay(250);
 digitalWrite(8,LOW);
-delay(500);
+delay(250);
 }
 delay(500);
 //O
 for (int i = 0; i < 3; ++i){
 digitalWrite(8,HIGH);
-delay(250);
+delay(500);
 digitalWrite(8,LOW);
-delay(250);
+delay(500);
 }
 delay(500);
 //S
 for (int i = 0; i < 3; ++i){
 digitalWrite(8,HIGH);
-delay(500);
+delay(250);
 digitalWrite(8,LOW);
-delay(500);
+delay(250);
 }
 //repeat
 delay(2000);
